@@ -1,0 +1,12 @@
+{{>nav}}
+ <div class="container">
+   <h1 class="text-center text-primary">This is a Dashboard</h1>
+  <ul class="my-3 list-group">
+    <li class="list-group-item">Name: {{name}}</li>
+    <li class="list-group-item">User ID: {{email}}</li>
+    <li class="list-group-item" style="overflow:hidden;">Password in database: {{hash}}</li>
+  </ul>
+  <form action="logout" method="post">
+    <button type="submit" class="btn btn-danger text-light">Logout</button>
+  </form>
+ </div>
